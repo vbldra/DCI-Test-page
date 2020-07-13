@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+}
+
+
+/* Navigation menu */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: #1e528e;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: #C2404D;
+    
+}
+
+/*Contact red button*/
+
+.btn-contact {
+    background-color:#C2404D;
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: -15px;
+    opacity: 0.5;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.btn-contact a { 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-contact:hover {
+    opacity: 1;
+    transform: rotate(-3deg);
+}
+
+
+/*Selections design*/
+
+section {
+    box-sizing: border-box;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+        
+section#home, section#projects, section#contact {
+    background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%);
+}
+
+section#skills, section#cv {
+    background-image: url(images/sky.jpg);
+}
+
+
+article {
+    margin: 0 auto;
+    padding: 50px; 
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 3px;
+}
+
+h2 {
+    margin: 0; 
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: -3px;
+    text-align: left;
+}
+
+img {
+    height: 150px;
+    border: 5px solid white;
+    transition: all 0.5s;
+    margin: 0 20px;
+}
+
+img.first-image {
+    filter: grayscale(1);
+}
+
+img.first-image:hover {
+    filter: none;
+}
+
+img.second-image:hover {
+    filter: none;
+    box-shadow: 10px 5px #C2404D;
+}
+p {
+    text-indent: 40px;
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 1,5;
+}
+
+
